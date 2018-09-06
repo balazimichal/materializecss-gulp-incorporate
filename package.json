@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/balazimichal/materializecss-gulp-incorporate#readme",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "static-server": "^2.2.1"
   }
 }
