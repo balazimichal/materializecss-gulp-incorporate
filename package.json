@@ -1,0 +1,22 @@
+{
+  "name": "materializecss-gulp-incorporate",
+  "version": "1.0.0",
+  "description": "Incorporate is ficticious company website build with materialize CSS framework using Gulp for sass, html and image compression.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balazimichal/materializecss-gulp-incorporate.git"
+  },
+  "author": "Michal Balazi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/balazimichal/materializecss-gulp-incorporate/issues"
+  },
+  "homepage": "https://github.com/balazimichal/materializecss-gulp-incorporate#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
