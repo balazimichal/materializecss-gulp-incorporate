@@ -6,6 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var sass = require('gulp-sass');
 var babel = require('gulp-babel');
 var sourcemaps = require('gulp-sourcemaps');
+var surge = require('gulp-surge');
 
 // Image compression
 var imagemin = require('gulp-imagemin');
@@ -102,8 +103,11 @@ gulp.task('watch', ['default'], function() {
 });
 
 // Build
-gulp.task('default', function() {
-  console.log('building...');
+gulp.task('surge', [], function() {
+  return surge({
+    project: './prod', // Path to dist directory
+    domain: 'incorporate.surge.sh' // url to Surge demo
+  });
 });
 
 // Default
