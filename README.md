@@ -19,15 +19,14 @@ You can preview this app on surge: http://incorporate.surge.sh
 To run this project folow this steps:
 
 - Clone the project with `git clone https://github.com/balazimichal/materializecss-npm-incorporate.git`
-- Unzip the
+- Unzip the folder
 - CD into the project folder and run `npm install` to install the dependencies
 - Run `gulp watch` to start the project
 - Edit and work on the files in /dev folder
 
 ## Deployment instructions
 
-- Run `gulp build` to build the project (build files can be found in /prod folder)
-- Run `gulp deploy` to deploy the project to surge (you need to have credentials)
+- Run `gulp surge` to deploy the project to surge (you need to have credentials)
 
 ## Image copyrights
 
