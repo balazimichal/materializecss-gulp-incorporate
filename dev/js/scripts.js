@@ -1,15 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems);
-});
+  var sidenav = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(sidenav);
 
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.scrollspy');
-  var instances = M.ScrollSpy.init(elems);
-});
+  var scrollspy = document.querySelectorAll('.scrollspy');
+  var instances = M.ScrollSpy.init(scrollspy);
 
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.pushpin');
+  var pushpin = document.querySelectorAll('.pushpin');
   var options = {
     top: 10,
     onPositionChange: function() {
@@ -21,5 +17,5 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   };
-  var instances = M.Pushpin.init(elems, options);
+  var instances = M.Pushpin.init(pushpin, options);
 });

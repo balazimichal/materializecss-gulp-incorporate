@@ -29,7 +29,7 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#downloads" class="btn blue">Downloads</a></li>
+                        <li><a href="#downloads" class="btn blue waves-effect waves-light">Downloads</a></li>
                     </ul>
                 </div>
             </div>
@@ -66,7 +66,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#downloads" class="btn blue">Downloads</a></li>
+            <li><a href="#downloads" class="btn blue waves-effect waves-light">Downloads</a></li>
         </ul>
 
 
@@ -81,9 +81,9 @@
                             companies to the
                             fortune 500</p>
 
-                        <a href="#about" class="waves-effect waves-dark btn btn-large blue">Learn more</a>
+                        <a href="#about" class="waves-effect waves-light btn btn-large blue">Learn more</a>
 
-                        <a href="#about" class="btn-floating grey lighten-1"><i class="material-icons">keyboard_arrow_down</i></a>
+                        <a href="#about" class="waves-effect waves-light btn-floating grey lighten-1"><i class="material-icons">keyboard_arrow_down</i></a>
 
                     </div>
                 </div>
@@ -181,52 +181,67 @@
     </section>
 
     <!-- SECTION: Contact -->
-    <section class="section scrollspy" id="contact">
+    <section id="contact" class="section section-contact center scrollspy">
+        <div id="googlemap"></div>
         <div class="container">
             <div class="row">
-                <div class="col s12">
-
+                <div class="col s12 m6 offset-m6">
+                    <div class="card-panel z-depth-5">
+                        <h4>Contact Us</h4>
+                        <div class="input-field">
+                            <input type="text" id="name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" id="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="phone">
+                            <label for="phone">Phone</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea class="materialize-textarea" id="message"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <input type="submit" value="Submit Message" class="btn blue-grey">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <!-- SECTION: Downloads -->
-    <section class="section scrollspy" id="downloads">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- FOOTER -->
     <footer class="page-footer blue-grey darken-4">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
-                        content.</p>
+                    <h5 class="white-text">Address</h5>
+                    <p class="grey-text text-lighten-4">
+                        <ul>
+                            <li>
+                                <h6>Incorporate</h6>
+                            </li>
+                            <li>76th Avenue</li>
+                            <li>NewYork</li>
+                            <li>12-110, USA</li>
+                        </ul>
+                    </p>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                    </ul>
+                    <h5 class="white-text">Social</h5>
+                    <p>
+
+                    </p>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                &copy; 2018 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                &copy; 2018 Incorporate. All rights reserved.
+                <a class="grey-text text-lighten-4 right" href="#!">Terms & Coditions &nbsp; | &nbsp; Privacy Policy</a>
             </div>
         </div>
     </footer>
@@ -234,6 +249,27 @@
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCD_9m-yvnnUZ5lGd-SNrIsF-oVoNeHr4Q&callback=initMap"
+        type="text/javascript"></script>
+    <script>
+        function initMap() {
+            var myLatLng = { lat: 42.361145, lng: -71.057083 };
+            var centerPosition = {
+                lat: 42.377815, lng: -70.981133
+            }
+
+            var map = new google.maps.Map(document.getElementById('googlemap'), {
+                zoom: 12,
+                center: centerPosition,
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Hello World!'
+            });
+        }
+    </script>
     <script type="text/javascript" src="js/scripts.min.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
 </body>

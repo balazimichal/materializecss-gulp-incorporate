@@ -84,6 +84,39 @@ header {
   }
 }
 
+.section-contact {
+  position: relative;
+  padding-top: 40px;
+
+  .card-panel {
+    position: relative;
+    z-index: 2;
+
+    h4 {
+      margin-bottom: 40px;
+    }
+  }
+
+  #googlemap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(63, 57, 77, 0.7);
+}
+
 @media only screen and (max-width: 600px) {
   header {
     height: 80vh;
