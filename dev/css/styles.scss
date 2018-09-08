@@ -21,6 +21,14 @@ header {
   background-size: cover;
   height: 100vh;
 
+  .pin-top {
+    background: rgba(55, 71, 79, 0);
+  }
+
+  .pinned {
+    background: rgba(55, 71, 79, 1);
+  }
+
   .brand-logo img {
     max-width: 50px;
     position: relative;
