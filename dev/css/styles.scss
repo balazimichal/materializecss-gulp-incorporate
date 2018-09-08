@@ -130,6 +130,13 @@ header {
   }
 }
 
+.page-footer {
+  .certificate-item {
+    max-width: 100px;
+    margin-top: 20px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   header {
     height: 80vh;
