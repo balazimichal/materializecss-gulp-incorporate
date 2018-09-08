@@ -51,7 +51,7 @@ header {
     height: calc(100% - 64px);
 
     .container {
-      padding-top: 10%;
+      padding-top: 17%;
     }
   }
 
@@ -65,6 +65,23 @@ header {
 
 .box {
   padding: 40px 10px !important;
+
+  h4 {
+    margin-bottom: 40px;
+  }
+}
+
+#testimonials {
+  .card-content {
+    font-size: 16px;
+    img {
+      margin-bottom: 20px;
+      max-height: 75px;
+    }
+  }
+  .card-action {
+    color: #546e7a;
+  }
 }
 
 @media only screen and (max-width: 600px) {
