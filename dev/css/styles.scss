@@ -63,6 +63,10 @@ header {
   }
 }
 
+.box {
+  padding: 40px 10px !important;
+}
+
 @media only screen and (max-width: 600px) {
   header {
     height: 80vh;
