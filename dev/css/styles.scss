@@ -13,6 +13,11 @@ h6 {
   font-family: 'Oxygen', sans-serif;
 }
 
+p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
 header {
   background: #c7c7c7;
   background-image: url('../images/skyline.jpg');
@@ -115,6 +120,14 @@ header {
   left: 0;
   z-index: 1;
   background: rgba(63, 57, 77, 0.7);
+}
+
+#about {
+  padding: 50px 0;
+  .flow-text {
+    font-size: 18px;
+    color: #78909c;
+  }
 }
 
 @media only screen and (max-width: 600px) {
