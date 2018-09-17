@@ -2,7 +2,7 @@
 
 Incorporate is ficticious company website build with materialize CSS framework using Gulp for sass, html and image compression.
 
-You can preview this app on surge: http://incorporate.surge.sh
+You can preview this app on surge: https://incorporate.surge.sh
 
 ## Technologies & services
 
