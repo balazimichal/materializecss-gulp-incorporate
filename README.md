@@ -14,6 +14,8 @@ You can preview this app on surge: https://incorporate.surge.sh
 - Gulp
 - Surge
 
+![alt text](/dev/images/screencapture-incorporate.jpg)
+
 ## Installation instructions
 
 To run this project folow this steps:
